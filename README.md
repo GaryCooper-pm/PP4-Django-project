@@ -114,7 +114,7 @@ Python code was passed through the [PEP8 online](http://pep8online.com/) code ch
 
 ## Heroku
 
-* This Game was deployed using [Heroku](https://heroku.com/) with the following the steps:
+* This Project was deployed using [Heroku](https://heroku.com/) with the following the steps:
 
 1. Navigate to [Heroku.com](https://www.heroku.com/) and log-in or create a new account.
 2. On the top right hand side, click the 'New' button.
