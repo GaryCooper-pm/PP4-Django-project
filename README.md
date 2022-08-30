@@ -1,108 +1,241 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![pixelmixel logo](docs/images/pixelmixel.png "Pixel Mixel Logo")
 
-Welcome USER_NAME,
+Welcome to my fourth Code Institute diploma project.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# INTRODUCTION AND OVERVIEW
+For my fourth project I decided to create a blog.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+'**Trails & Ales**' is a blog where I can record and share my mountain bike rides with friends and fellow mountain bikers.
 
-## Gitpod Reminders
+# TRAILS & ALES
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Loading Image](docs/images/loading_screen.png)
 
-`python3 -m http.server`
+### **Live Project can be viewed:**  [HERE](https://gc-pp4-django-project.herokuapp.com/)
 
-A blue button should appear to click: _Make Public_,
+### **The repository can be found here:**  [HERE](https://github.com/GaryCooper-pm/PP4-Django-project)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## INITIAL IDEA CONCEPT
 
-A blue button should appear to click: _Make Public_,
+My initial idea for this project was to create a simple blog that would enable me to create posts after each ride.  This would enable me to records and share my rides with friends and fellow cyclists.  The blog would give them a narrative for the ride where I can share my thoughts on the trails and any pictures I may take along the way.
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#
+## CONTENTS
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- [USER STORY](#user-story)
+- [FEATURES](#features)
+    - [Typography](#typography)
+- [TESTING](#testing)
+    - [User story testing](#user-story-testing)
+    - [Validation](#validation)
+    - [Manual testing](#manual-testing)
+    - [Unsolved bugs and problems](#unsolved-bugs-and-problems)
+- [TECHNOLOGIES](#technologies)
+    - [Development](#development)
+    - [Languages used](#languages-used)
+    - [Libraries used](#libraries-used)
+- [DEPLOYMENT](#deployment)
+- [ACKNOWLEDGEMENTS](#acknowledgements)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#
 
-------
+## USER STORY
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* As a user I want to be able to create a post
+* As a user I want to be able to add pictures to a post
+* As a user I want to be able to add tags to each post
 
 ---
 
+## FEATURES
+
+
+### Typography:
+
+* The project utilises ...
+
+---
+
+# TESTING
+
+## User story testing
+
+* `As a user, I want to be able to create a post`:
+    * Once the user has created the post it is visible.  Outcome: `Fulfilled.`
+
+* `As a user, I want to be able to add a picture to a post`:
+    * The published post displays the correct image.  Outcome: `Fulfilled.`
+
+* `As a user, want to be able to add tags to each pos`:
+    * The user is able to add/and or select a tag.  Outcome: `Fulfilled.`
+
+
+## Validation
+### PEP8 Online Validation
+
+Python code was passed through the [PEP8 online](http://pep8online.com/) code checker.
+
+![pep8 check](docs/images/pep8_check.png)
+
+
+## Manual Testing
+
+
+## Unsolved bugs and problems
+
+
+## Resolved bugs and problems
+
+
+---
+
+# TECHNOLOGIES
+
+## DEVELOPMENT
+
+* The project was written and tested using [Gitpod](https://gitpod.io/)
+* The project uses [Github](https://github.com/) for utilising git version control
+* The project was deployed via [Heroku](https://heroku.com/)
+
+
+## LANGUAGES USED
+
+* The project was written using ...
+
+## LIBRARIES USED
+
+
+---
+
+# DEPLOYMENT
+
+## Heroku
+
+* This Game was deployed using [Heroku](https://heroku.com/) with the following the steps:
+
+1. Navigate to [Heroku.com](https://www.heroku.com/) and log-in or create a new account.
+2. On the top right hand side, click the 'New' button.
+3. Inside the dropdown menu, select 'Create new app'.
+4. Create a new name for your app (making sure the name chosen is available) in this case it is `numberex`.
+    App names can only be in lower-case letters, numbers and dashes.
+5. Select your region, in this case, `Europe`.
+6. Click on the `Create App` button.  
+7. This will create your app in Heroku and take you to the [Heroku](https://heroku.com/) dashboard.
+8. Navigate to the settings tab and scroll down to the button `Reveal Config vars`.
+9. Replace the word `KEY` and enter `PORT` and then replace the word `VALUE` and enter `8000` then click on the `Add` button.
+10. Below `Config vars` is `Buildpacks`. Click the `Add Buildpack` button.
+11. In the pop up window, select `python` and save changes.
+12. Repeat this again but this time selecting `node.js` and save the changes.
+13. It is `important` to make sure the buildpacks are in the correct order 
+    with `Python` being at the top and `node.js` bottom. If they are not in the correct order, you can drag them into the right order.
+14. Next, navigate to the `Deploy` tab at the top left side.
+15. Select `Github, 'connect to github'` as the deployment method.
+16. Search for the Github Repository in the search field (in this case `Python_PP4`) and click `Search`.
+17. When the search is complete, click `connect`.
+18. Once your repository is connected to [Heroku](https://heroku.com/), Click the `Enable Automatic Deploys` button for automatic deployment.
+19. Alternatively you can manually deploy by selecting a branch to deploy from and clicking `Deploy Branch`.
+20. If you choose to `Enable Automatic Deploys`, [Heroku](https://heroku.com/) will build a new version of the app when a change to 
+    `gitpod` is pushed to `Github`.  
+21. Manual deployment allows you to update the app whenever you click `Deploy Branch`.
+    In the case of this project, I chose to `Enable Automatic Deploys` to ensure the code was deployed straight away at each push from `Gitpod`.
+22. Once the build process is complete (this can take a few seconds) you will then be able to view the live app by clicking on the button `View`
+    below `Your app was successfully deployed`.
+
+## Version control
+
+* These commands were used for version control during project:
+
+    * git add `example filename` - to add files before committing
+    * git commit -m `"example message"` - to commit changes to the local repository
+    * git push - to push all committed changes to the GitHub repository
+    * git branch - to see which branch currently working on
+    * git pull - to pull all code into main branch once the feature branch had been merged and deleted
+    * git status - to see if the branch currently working on is upto date or if the are any unstaged
+    * git log --oneline - to see the last commit
+    * git commit --amend - to amend the most recent commit message
+
+## How to create a branch/Tag of main:
+
+If you need to `BRANCH` off of the main repository:
+
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/GaryCooper-pm/
+2. On the left side of the screen underneath the nav links, click the drop down box `Main`
+3. Inside the box you will see `Create new branch/tag`
+4. Inside the text box, enter the new branch or tag name i.e., `Features`
+5. Below the Branches Tags tab, you will see `Create branch: Features from "main"`
+6. Click on `Create branch: Features from "main"` and you will be taken to the new branch page you just called `Features`
+
+## How to fork a repository:
+
+If you need to `FORK` a repository:
+
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/GaryCooper-pm/
+2. In the top right corner, click `Fork`
+3. The next page will be the forked version of https://github.com/GaryCooper-pm/ but in your own repository
+## How to clone a repository:
+
+If you need to make a clone of this repository:
+
+1. Fork the repository https://github.com/GaryCooper-pm/ using the steps above
+2. Above the file list, click `Code` (Usually green at the top right of the code window)
+3. Choose if you want to clone using HTTPS, SSH or GitHub CLI, then click the copy button to the right
+4. Open Git Bash
+5. Change the directory to where you want your clone to go (your own github)
+6. Type `git clone` and then paste the URL you copied in step 4
+7. Press `Enter` to create your clone
+
+## How to make a local clone:
+
+If you need to make a local clone:
+
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/GaryCooper-pm/
+2. Under the repository name, above the list of files, click `Code`
+3. Here you will have two options, `Clone` or `Download` the repository
+4. You should close the repository using HTTPS, clicking on the icon to copy the link
+5. At this point, you can launch the `Gitpod workspace` or choose your own directory
+5. Open Git Bash
+6. Change the current working directory to the new location of where you want the cloned directory to be
+7. Type git clone and then paste the URL you copied in step 4
+8. Press Enter, to create your local clone to your chosen directory
+
+
+---
+
+## ACKNOWLEDGEMENTS
+
+* My mnetor Brian O'Hare for all his support advice and encouragement throughout this project.
+
+* My loving family for putting up with my hours sat at the computer working things out.
+
+* My business partner Damian for his continued support and guidance.
+
+* My good friend Barry for listening to me witter on whilst we are out riding our bikes, from which I gained the inspiration for the blog.
+
+* My fellow students on Slack for their advice when things don't go according to plan.
+
+
+---
+
+
+## Creating the Heroku app
+
+When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+
+1. `heroku/python`
+2. `heroku/nodejs`
+
+You must then create a _Config Var_ called `PORT`. Set this to `8000`
+
+If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+
+Connect your GitHub repository and deploy as normal.
+
+## Constraints
+
+The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+
+-----
 Happy coding!
