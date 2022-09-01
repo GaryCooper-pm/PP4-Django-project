@@ -25,6 +25,7 @@ My initial idea for this project was to create a simple blog that would enable m
 ## CONTENTS
 
 
+- [DJANGO PROJECT CHECKLIST](#project-checklist)
 - [USER STORY](#user-story)
 - [FEATURES](#features)
     - [Typography](#typography)
@@ -41,6 +42,10 @@ My initial idea for this project was to create a simple blog that would enable m
 - [ACKNOWLEDGEMENTS](#acknowledgements)
 
 #
+
+## PROJECT CHECKLIST
+
+### **The complete Project checklist can be found:** [HERE](https://github.com/users/GaryCooper-pm/projects/3)
 
 ## USER STORY
 
