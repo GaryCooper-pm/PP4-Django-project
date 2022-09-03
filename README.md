@@ -211,7 +211,9 @@ If you need to make a local clone:
 
 ## ACKNOWLEDGEMENTS
 
-* My mnetor Brian O'Hare for all his support advice and encouragement throughout this project.
+* I based this project on the Code Institute `I think Therefore I Blog` module utilising code from the walkthrough videos.
+
+* My mentor Brian O'Hare for all his support advice and encouragement throughout this project.
 
 * My loving family for putting up with my hours sat at the computer working things out.
 
