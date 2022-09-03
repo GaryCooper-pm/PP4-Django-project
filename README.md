@@ -18,7 +18,7 @@ For my fourth project I decided to create a blog.
 
 ## INITIAL IDEA CONCEPT
 
-My initial idea for this project was to create a simple blog that would enable me to create posts after each ride.  This would enable me to records and share my rides with friends and fellow cyclists.  The blog would give them a narrative for the ride where I can share my thoughts on the trails and any pictures I may take along the way.
+My initial idea for this project was to create a simple blog that would enable me to create posts after each ride.  This would enable me to record and share my rides with friends and fellow cyclists.  The blog would give them a narrative for the ride where I can share my thoughts on the trails and any pictures I may take along the way.
 
 
 #
