@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 
-STATUS = ((0, "Draftr"), (1, "Published"))
+STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
@@ -23,7 +23,7 @@ class Post(models.Model):
 
 
 class Meta:
-    ordering = ['-created_on']
+    ordering = ["-created_on"]
 
 
 def __str__(self):
@@ -36,7 +36,7 @@ def number_of_likes(self):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
-                             related_name='comments')
+                             related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
