@@ -72,10 +72,10 @@ My initial idea for this project was to create a simple blog that would enable m
     * Once the user has created the post it is visible.  Outcome: `Fulfilled.`
 
 * `As a user, I want to be able to add a picture to a post`:
-    * The published post displays the correct image.  Outcome: `Fulfilled.`
+    * The published post displays the correct image.  Outcome: `...`
 
-* `As a user, want to be able to add tags to each pos`:
-    * The user is able to add/and or select a tag.  Outcome: `Fulfilled.`
+* `As a user, want to be able to add tags to each post`:
+    * The user is able to add/and or select a tag.  Outcome: `...`
 
 
 ## Validation
