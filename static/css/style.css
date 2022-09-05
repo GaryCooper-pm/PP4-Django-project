@@ -140,3 +140,24 @@ body {
     background: transparent;
     border: none;
 }
+
+/*------------------------------ Social link styling */
+.fa-facebook {
+    color: white;
+}
+
+.fa-strava {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-github {
+    color: white;
+}

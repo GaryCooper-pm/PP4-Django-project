@@ -45,7 +45,7 @@ My initial idea for this project was to create a simple blog that would enable m
 
 ## PROJECT CHECKLIST
 
-### **The complete Project checklist can be found:** [HERE](https://github.com/users/GaryCooper-pm/projects/3)
+### **The complete Project checklist can be found:** [HERE](https://github.com/users/GaryCooper-pm/projects/3/views/1)
 
 ## USER STORY
 
