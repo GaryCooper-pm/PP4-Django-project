@@ -18,8 +18,20 @@ For my fourth project I decided to create a blog.
 
 ## INITIAL IDEA CONCEPT
 
-My initial idea for this project was to create a simple blog that would enable me to create posts after each ride.  This would enable me to record and share my rides with friends and fellow cyclists.  The blog would give them a narrative for the ride where I can share my thoughts on the trails and any pictures I may take along the way.
+* My initial idea for this project was to create a simple blog that would enable me to create posts after each ride.
 
+* This would enable me to record and share my rides with friends and fellow cyclists.
+
+* The blog would give them a narrative for the ride where I can share my thoughts on the trails and any pictures I may take along the way.
+
+
+## TARGET AUDIENCE
+
+* Anyone who wants to read about my cycling escapades.
+
+* People who share a love for cycling, especially singlespeed mountain bikes
+
+* People looking to join me on a social ride and enjoy the trails with like minded others.
 
 #
 ## CONTENTS
@@ -49,20 +61,51 @@ My initial idea for this project was to create a simple blog that would enable m
 
 ## USER STORY
 
-* As a user I want to be able to create a post
-* As a user I want to be able to add pictures to a post
-* As a user I want to be able to add tags to each post
+I used the agile methodology tool:
+
+* GitHub Projects was utilised to create and manage a Kanban board, for planning and implementing the project's functionality.
+
+![Kanban Board](docs/images/kanban_board.JPG)
+
+* As a Site User I can view a list of posts so that I can easily select one to view.
+* As a Site User I can view a list of posts so that I can select one to read.
+* As a Site User I can click on a post so that I can read the full content.
+* As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+* As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+* As a Site User I can register an account so that I can comment and like.
+* As a Site User I can leave comments on a post so that I can be involved in the conversation.
+* As a Site User I can like or unlike a post so that I can interact with the content.
+* As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
+* As a Site Admin I can create draft posts so that I can finish writing the content later.
+* As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
 
 ---
 
 ## FEATURES
 
 
-### Typography:
+### Wireframes:
 
-* The project utilises ...
+* The project was initially visualised using Balsamiq.
+* Home Page
 
----
+![Home Page](docs/images/home_page.JPG)
+
+* Blog Post Page
+
+![Blog Post Page](docs/images/post_page.JPG)
+
+* Register Page
+
+![Register Page](docs/images/register_page.JPG)
+
+* Sign In Page
+
+![Sign In Page](docs/images/login_page.JPG)
+
+* Registered User Comment Page
+
+![Registered User Comment Page](docs/images/comment_page.JPG)
 
 # TESTING
 
