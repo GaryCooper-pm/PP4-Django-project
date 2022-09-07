@@ -3,6 +3,24 @@
 {% block content %}
 
 <div class="container-fluid">
+
+    <!-- About -->
+    <div class="row">
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Welcome</h2>
+                            <p>This is a personal blog where I will write about my exploits.</p>
+                            <p>Please feel free to read through and comment on my posts!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
 
         <!-- Blog Entries Column -->
@@ -15,7 +33,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://dgtzuqphqg23d.cloudfront.net/MFjsqakJRn6yxJ8B6DKG9NjAWu-nQlwILJrV3R4QaE4-1536x2048.jpg">
+                                    src="https://dgtzuqphqg23d.cloudfront.net/F6Hlzw4FAxFh8Q55u2L2C1bq0OHySxtTLTA6f7oOEwg-2048x1536.jpg">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}

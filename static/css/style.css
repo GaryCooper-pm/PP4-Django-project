@@ -1,32 +1,37 @@
+/* Thanks to Code Institutes 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog */
+
 body {
-    background-color: #F9FAFC;
+    background-color: #F4FAFF;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding-top: 12%;
+    padding-bottom: 12%;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
+.navbar-brand {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3rem;
     font-weight: 700;
+    font-style: italic;
     color: #4A4A4F;
 }
 
-.green-and {
-    color: #04ca2fb9;
-}
-
-.thin {
-    font-weight: 300;
+.nav-link {
+    font-size: 1.2rem;
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: white;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #333f4b;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #F4FAFF;
 }
 
 .card {
@@ -43,7 +48,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #e94e4e;
 }
 
 .author {
@@ -93,7 +98,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #4A4A4F;
 }
 
 .post-title {
@@ -107,36 +112,36 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #00a043;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: rgb(255, 255, 255);
+    color: #017524;
 }
 
 .link {
-    color: #23BBBB;
+    color: #7CC6FE;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #fff;
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
+    color: red;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: red;
     background: transparent;
     border: none;
 }
