@@ -298,13 +298,13 @@ __Testing User Stories__
 
   ![Lighthouse result](docs/images/lighthouse_mobile.JPG)
 
-## Manual Testing
-
 
 ## Unsolved bugs and problems
 
+- When adding a new post via the front end page "Add Post", the placeholder image is always aset as default, despite using other images being selected/uploaded. As a workaround the blog post's placeholder image can be replaced via the Django Admin Panel.
 
-## Resolved bugs and problems
+- The sticky footer and fixed navbar appear larger on some lower resolution mobile devices, partially obscuring some of the site elements (this does not affect any functionality of the site).
+
 
 # DEPLOYMENT
 
