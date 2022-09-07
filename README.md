@@ -284,7 +284,7 @@ __Testing User Stories__
 
 - No errors were returned when passing through the [PEP8online check.](http://pep8online.com/)
 
-![pep8 check](docs/images/pep8_check.png)
+![pep8 check](docs/images/pep8_check.JPG)
 
 
 ## GOOGLE Lightouse Testing
