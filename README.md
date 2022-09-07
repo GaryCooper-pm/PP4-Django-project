@@ -9,9 +9,9 @@ For my fourth project I decided to create a blog.
 
 # TRAILS & ALES
 
-![Loading Image](docs/images/loading_screen.png)
+![Loading Image](docs/images/loading_screen.JPG)
 
-### **Live Project can be viewed:**  [HERE](https://gc-pp4-django-project.herokuapp.com/)
+### **Live Project can be viewed:**  [HERE](https://trailsandales.herokuapp.com/)
 
 ### **The repository can be found here:**  [HERE](https://github.com/GaryCooper-pm/PP4-Django-project)
 
@@ -267,12 +267,36 @@ __Testing User Stories__
 
 
 ## Validation
-### PEP8 Online Validation
 
-Python code was passed through the [PEP8 online](http://pep8online.com/) code checker.
+### HTML
+
+- No errors/warnings were returned when passing through the official [W3C validator]()
+
+![HTML check](docs/images/html_check.JPG)
+
+### CSS
+
+- No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrailsandales.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+![CSS check](docs/images/css_check.JPG)
+
+### PYTHON / PEP8 Online Validation
+
+- No errors were returned when passing through the [PEP8online check.](http://pep8online.com/)
 
 ![pep8 check](docs/images/pep8_check.png)
 
+
+## GOOGLE Lightouse Testing
+
+- Google's Lighthouse was used for measuring the quality of the pages.
+  - Home Page (desktop) result:
+
+  ![Lighthouse result](docs/images/lighthouse_desktop.JPG)
+
+  - Home Page (mobile) result:
+
+  ![Lighthouse result](docs/images/lighthouse_mobile.JPG)
 
 ## Manual Testing
 
