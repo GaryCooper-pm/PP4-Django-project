@@ -40,16 +40,17 @@ For my fourth project I decided to create a blog.
 - [DJANGO PROJECT CHECKLIST](#project-checklist)
 - [USER STORY](#user-story)
 - [FEATURES](#features)
-    - [Typography](#typography)
+    - [Wireframes](#wireframes)
+    - [Design](#design)
+- [TECHNOLOGIES](#technologies)
+    - [Development](#development)
+    - [Languages used](#languages-used)
+    - [Libraries used](#libraries-used)
 - [TESTING](#testing)
     - [User story testing](#user-story-testing)
     - [Validation](#validation)
     - [Manual testing](#manual-testing)
     - [Unsolved bugs and problems](#unsolved-bugs-and-problems)
-- [TECHNOLOGIES](#technologies)
-    - [Development](#development)
-    - [Languages used](#languages-used)
-    - [Libraries used](#libraries-used)
 - [DEPLOYMENT](#deployment)
 - [ACKNOWLEDGEMENTS](#acknowledgements)
 
@@ -67,17 +68,17 @@ I used the agile methodology tool:
 
 ![Kanban Board](docs/images/kanban_board.JPG)
 
-* As a Site User I can view a list of posts so that I can easily select one to view.
-* As a Site User I can view a list of posts so that I can select one to read.
-* As a Site User I can click on a post so that I can read the full content.
-* As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
-* As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
-* As a Site User I can register an account so that I can comment and like.
-* As a Site User I can leave comments on a post so that I can be involved in the conversation.
-* As a Site User I can like or unlike a post so that I can interact with the content.
-* As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
-* As a Site Admin I can create draft posts so that I can finish writing the content later.
-* As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+- As a Site User I can view a list of posts so that I can easily select one to view.
+- As a Site User I can view a list of posts so that I can select one to read.
+- As a Site User I can click on a post so that I can read the full content.
+- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+- As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+- As a Site User I can register an account so that I can comment and like.
+- As a Site User I can leave comments on a post so that I can be involved in the conversation.
+- As a Site User I can like or unlike a post so that I can interact with the content.
+- As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
+- As a Site Admin I can create draft posts so that I can finish writing the content later.
+- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
 
 ---
 
@@ -107,18 +108,162 @@ I used the agile methodology tool:
 
 ![Registered User Comment Page](docs/images/comment_page.JPG)
 
+- Models Diagrams:
+
+![Models Diagram](docs/images/models_diagram.JPG)
+
+### DESIGN
+
+- [Google Fonts](https://fonts.google.com/) was used for the website's fonts.
+
+![Fonts Used](docs/images/fonts.JPG)
+
+__Navigation Bar__
+
+![Navigation Bar](docs/images/navbar.JPG)
+- Navigation is a fully responsive feature on all pages, it includes links on the site's Logo (displaying to the left within the bar), Home, Register and Login pages.
+
+![Navigation Bar](docs/images/navbar_superuser_loggedin.JPG)
+- The 'Add Post' page only shows up for superusers when logged in.
+- The navigation looks the same on each page to allow for easy navigation, taking the user through a logical journey.
+- This section makes it easy for the user to learn more about the site's different sections and content.
+
+__Welcome Section__
+
+![Welcome section](docs/images/welcome.JPG)
+- A Welcome section on the home page welcomes the users to the site and lets them know what the site is about.
+
+
+__Blog Posts Section__
+
+![Blog section](docs/images/blog_post.JPG)
+- The Blog posts section displays six posts at a time (with featured images, authors, titles, post dates, excerpts), featuring pagination ("NEXT", "PREV" buttons show up), in case there are seven or more posts.
+
+__Footer__
+
+![Footer](docs/images/footer.JPG)
+- The footer area consists of five social links for the blog (Facebook, Strava, Instagram, YouTube and GitHub - all of them, if clicked, open on a separate tab).
+- Like the navigation section, the footer looks the same on each page (and features on all of the pages) to allow for easy navigation, taking the user through a logical journey.
+
+__Blog Post Page__
+
+![Post header](docs/images/blog_post_detail.JPG)
+![Post header](docs/images/blog_post_detail_admin.JPG)
+- Featuring the post image, post title, post author and post date.
+- If the logged in user is an admin two links "Edit" & "Delete" appear.
+- Post body content, like and comment count.  The Like and Comment counters display how many users have liked and/or commented on the post.
+- Only registered users can like or comment on posts.  Registered users can click on the heart icon to like or unlike the post.
+
+__Comments Section__
+
+![Comment section](docs/images/comments.JPG)
+- The comments section features information displayed from all users who have posted comments, such as their username, the date of the comment and the comment's content.
+
+![Comment section](docs/images/comments_loggedin.JPG)
+- If the user is logged in it will display a text field to the right, where they are able to engage with other users/the post and submit a comment.
+- Comments are moderated to avoid unfriendly interactions and spam.  Once a user submits a comment the message below appears to them.
+
+![Comment message](docs/images/comments_approval.JPG)
+
+__Add Post Page__
+
+![Comment message](docs/images/add_post.JPG)
+- If the user logged in as an admin they are able to add a blog post (from both the front and backend) by simply clicking on the 'Add Post' navigation link.
+- The page features a form where the user can fill out all the details for the new post, such as title, slug, author, featured image (if desired), content and whether to publish or save as a draft for editing at a later time.
+
+__Edit Blog Post Page__
+
+![Comment message](docs/images/edit_post.JPG)
+- The page features a form where, if the user logged in is an admin, they are able to Edit any of the Blog posts (both from the front and backend), by clicking on the "Edit" link in the blogs header.
+
+__Delete Blog Post Page__
+
+![Comment message](docs/images/delete_post.JPG)
+- The page features a form where, if the user logged in is an admin, they are able to Edit any of the Blog posts (both from the front and backend), by clicking on the "Edit" link in the blogs header.
+
+---
+
+# TECHNOLOGIES
+
+## DEVELOPMENT
+
+* The project was written and tested using [Gitpod](https://gitpod.io/)
+* The project uses [Github](https://github.com/) for utilising git version control
+* The project was deployed via [Heroku](https://heroku.com/)
+
+## LANGUAGES USED
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
+
+## FRAMEWORKS, LIBRARIES & PROGRAMS USED
+
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
+- [Bootstrap](https://getbootstrap.com/)
+  - Bootstrap template.
+- [Cloudinary](https://cloudinary.com/)
+  - Cloudinary was used to store the project's images.
+- [Django](https://www.djangoproject.com/)
+  - Django was used to build the app.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html/)
+  - Django allauth for account management.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+  - Django Crispy Forms for rendering elegant DRY forms.
+- [Font Awesome](https://fontawesome.com/)
+  - Font Awesome was used to add icons to improve the design of the website.
+- [Git](https://git-scm.com/) & [Gitpod](https://gitpod.io/)
+  - Git was used for version control via the Gitpod terminal in order to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+  - GitHub was used for version control.
+- [Google Fonts](https://fonts.google.com/)
+  - Google Fonts was used to import the fonts which are used on the website.
+- [Heroku](https://heroku.com/)
+  - Heroku was used for hosting and deploying the game.
+- [Lucidchart](https://www.lucidchart.com/)
+  - Lucidchart was used for drawing the database models.
+- [PostgreSQL](https://www.postgresql.org/)
+  - PostgreSQL for database management.
+- [Summernote](https://summernote.org/)
+  - Summernote WYSIWYG for Bootstrap.
+
+---
+
 # TESTING
 
-## User story testing
+__Manual Testing:__
+  
+- All links, form submissions, admin privileges, user privileges, app functions were tested out and work as intended.
 
-* `As a user, I want to be able to create a post`:
-    * Once the user has created the post it is visible.  Outcome: `Fulfilled.`
+__Testing User Stories__
 
-* `As a user, I want to be able to add a picture to a post`:
-    * The published post displays the correct image.  Outcome: `...`
+- As a Site User I can view a list of posts so that I can easily select one to view.
+    - As soon as the user lands at the home page, they are able to see all the available blog posts.
 
-* `As a user, want to be able to add tags to each post`:
-    * The user is able to add/and or select a tag.  Outcome: `...`
+- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+    - All the posts display a heart icon with a number next to it (which indicate how many times the post has been liked).
+
+- As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+    - Whenever the user is reading a post, once they scroll down to the comments section, they can read any comments that users have left on that particular post.
+
+- As a Site User I can register an account so that I can comment and like on posts.
+    - The navigation bar is a section that makes it easy for the user to learn more about the site's different sections, and it includes a "Register" page. Once the user goes through the straightforward registration process, they are able to like and comment on different posts.
+
+- As a Site User I can like or unlike a post so that I can interact with the content.
+    - Once the user is registered, they may click on the heart icon to simply like or unlike a post.
+
+- As a Site Admin I can Create, Read, Update and Delete posts (CRUD) so that I can manage my blog content both from the front and backend.
+    - The site admin is able to perform all CRUD functionalities from either the Django admin panel, or if they prefer, from the front-end as well. Once a superuser is logged in they are able to:
+        - See an "Add Post" page in the navigation bar, once they click on this, a form is displayed to add a post.
+        - If they click on any blog post they will see two links at the blog post header, "Edit" & "Delete".
+
+- As a Site Admin I can create draft posts so that I can finish writing the content later.
+    - Whenever a post author decides to write a blog post, they have a dropdown option to pick from, and they can either choose the post status as "Draft" or "Publish".
+
+- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+    - Admins may be able to read submitted comments and decide via the Django admin panel if they would like to approve or delete comments.
 
 
 ## Validation
@@ -136,27 +281,6 @@ Python code was passed through the [PEP8 online](http://pep8online.com/) code ch
 
 
 ## Resolved bugs and problems
-
-
----
-
-# TECHNOLOGIES
-
-## DEVELOPMENT
-
-* The project was written and tested using [Gitpod](https://gitpod.io/)
-* The project uses [Github](https://github.com/) for utilising git version control
-* The project was deployed via [Heroku](https://heroku.com/)
-
-
-## LANGUAGES USED
-
-* The project was written using ...
-
-## LIBRARIES USED
-
-
----
 
 # DEPLOYMENT
 
