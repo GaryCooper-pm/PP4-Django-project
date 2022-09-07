@@ -1,14 +1,22 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic import UpdateView, DeleteView, CreateView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from django.urls import reverse_lazy
 
+"""
+Thanks to Code Institutes 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog
+"""
 
 class PostList(generic.ListView):
+
     model = Post
-    queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "index.html"
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'index.html'
     paginate_by = 6
 
 
@@ -17,7 +25,7 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by("-created_on")
+        comments = post.comments.filter(approved=True).order_by('created_on')
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -33,7 +41,7 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)
@@ -67,7 +75,7 @@ class PostDetail(View):
 
 
 class PostLike(View):
-    
+
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -76,4 +84,34 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-        
+
+
+class UpdatePost(UpdateView):
+    model = Post
+    template_name = 'update_post.html'
+    fields = ['title', 'content', 'excerpt']
+    # redirect to home page
+    success_url = reverse_lazy('home')
+
+
+class DeletePost(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    # redirect to home page
+    success_url = reverse_lazy('home')
+
+
+class AddPost(CreateView):
+    model = Post
+    template_name = 'add_post.html'
+    fields = [
+        'title',
+        'slug',
+        'author',
+        'featured_image',
+        'excerpt',
+        'content',
+        'status'
+        ]
+    # redirect to home page
+    success_url = reverse_lazy('home')

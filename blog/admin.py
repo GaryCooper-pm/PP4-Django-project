@@ -2,6 +2,11 @@ from django.contrib import admin
 from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
+"""
+Thanks to Code Institutes 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/Django3blog
+"""
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
