@@ -9,7 +9,7 @@ For my fourth project I decided to create a blog.
 
 # TRAILS & ALES
 
-![Loading Image](docs/images/loading_screen.JPG)
+![Loading Image](docs/images/responsiveness.JPG)
 
 ### **Live Project can be viewed:**  [HERE](https://trailsandales.herokuapp.com/)
 
@@ -167,19 +167,19 @@ __Comments Section__
 
 __Add Post Page__
 
-![Comment message](docs/images/add_post.JPG)
+![Add Post](docs/images/add_post.JPG)
 - If the user logged in as an admin they are able to add a blog post (from both the front and backend) by simply clicking on the 'Add Post' navigation link.
 - The page features a form where the user can fill out all the details for the new post, such as title, slug, author, featured image (if desired), content and whether to publish or save as a draft for editing at a later time.
 
 __Edit Blog Post Page__
 
-![Comment message](docs/images/edit_post.JPG)
+![Edit Post](docs/images/edit_post.JPG)
 - The page features a form where, if the user logged in is an admin, they are able to Edit any of the Blog posts (both from the front and backend), by clicking on the "Edit" link in the blogs header.
 
 __Delete Blog Post Page__
 
-![Comment message](docs/images/delete_post.JPG)
-- The page features a form where, if the user logged in is an admin, they are able to Edit any of the Blog posts (both from the front and backend), by clicking on the "Edit" link in the blogs header.
+![Delete Post](docs/images/delete_post.JPG)
+- If the user logged in is an admin, they are able to Delete any of the Blog posts (both from the front and backend), by clicking on the "Delete" link in the blogs header.
 
 ---
 
@@ -299,11 +299,23 @@ __Testing User Stories__
   ![Lighthouse result](docs/images/lighthouse_mobile.JPG)
 
 
+## Responsive Testing
+
+- __[Techsini](https://techsini.com/multi-mockup/index.php)__
+  - This shows how responsive the website is and looks across four different viewports (Desktop, Laptop, Tablet and Mobile):
+![Responsive TFS](docs/images/responsiveness.JPG)
+
+
 ## Unsolved bugs and problems
 
 - When adding a new post via the front end page "Add Post", the placeholder image is always aset as default, despite using other images being selected/uploaded. As a workaround the blog post's placeholder image can be replaced via the Django Admin Panel.
 
 - The sticky footer and fixed navbar appear larger on some lower resolution mobile devices, partially obscuring some of the site elements (this does not affect any functionality of the site).
+
+
+## Resolved problems
+
+- When trying to check the responsiveness of the site I encountered a problem with the AmIResponsive website where by the site preview would not display.  After speaking with fellow student Chris Williams he directed me to a thread on [Slack](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1659653726948199) with a [work around](https://techsini.com/unable-to-generate-mockup-of-your-website-here-is-the-quick-fix/). 
 
 
 # DEPLOYMENT
@@ -406,6 +418,8 @@ If you need to make a local clone:
 
 * My mentor Brian O'Hare for all his support advice and encouragement throughout this project.
 
+* Codemy over on YouTube for the example blog video tutorials for inspiration and example. 
+
 * My loving family for putting up with my hours sat at the computer working things out.
 
 * My business partner Damian for his continued support and guidance.
@@ -413,27 +427,3 @@ If you need to make a local clone:
 * My good friend Barry for listening to me witter on whilst we are out riding our bikes, from which I gained the inspiration for the blog.
 
 * My fellow students on Slack for their advice when things don't go according to plan.
-
-
----
-
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
