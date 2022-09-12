@@ -82,6 +82,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Thanks to David Bowers on SLACK for this snippet of code to
+# correct server error (500)
+# when registering as a user with an email address.
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
