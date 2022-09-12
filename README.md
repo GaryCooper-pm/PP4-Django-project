@@ -310,12 +310,13 @@ __Testing User Stories__
 
 - When adding a new post via the front end page "Add Post", the placeholder image is always aset as default, despite using other images being selected/uploaded. As a workaround the blog post's placeholder image can be replaced via the Django Admin Panel.
 
-- The sticky footer and fixed navbar appear larger on some lower resolution mobile devices, partially obscuring some of the site elements (this does not affect any functionality of the site).
-
 
 ## Resolved problems
 
 - When trying to check the responsiveness of the site I encountered a problem with the AmIResponsive website where by the site preview would not display.  After speaking with fellow student Chris Williams he directed me to a thread on [Slack](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1659653726948199) with a [work around](https://techsini.com/unable-to-generate-mockup-of-your-website-here-is-the-quick-fix/).
+
+- When checking the responsiveness of the site on smaller screens sizes the fixed NavBar and Footer were causing display issues and hiding the post title.
+I removed these elements and this resolved the issue.
 
 - I had a problem where if a user registered with an email address they would recieve a **Server Error (500)** error.
 I searched SLACK and was able to locate a [thread](https://code-institute-room.slack.com/archives/CGWQJQKC5/p1650100770308339?thread_ts=1650066731.441429&cid=CGWQJQKC5) where fellow student David Bowers had the same issue; the following code was used to resolve this;
