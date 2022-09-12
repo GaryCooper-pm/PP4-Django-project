@@ -6,8 +6,8 @@ body {
     background-color: #F4FAFF;
     font-family: 'Prompt', sans-serif;
     font-weight: 300;
-    /* padding-top: 12%; */
-    /* padding-bottom: 12%; */
+    padding-top: 12%;
+    padding-bottom: 12%;
 }
 
 .navbar-brand {
