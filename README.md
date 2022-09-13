@@ -108,6 +108,22 @@ I used the agile methodology tool:
 
 ![Registered User Comment Page](docs/images/comment_page.JPG)
 
+* Mobile Home Page
+
+![Mobile Home Page](docs/images/mobile_home_page.JPG)
+
+* Mobile Blog Post Page
+
+![Mobile Blog Post Page](docs/images/mobile_post_page.JPG)
+
+* Mobile Register Page
+
+![Mobile Register Page](docs/images/mobile_register_page.JPG)
+
+* Mobile Sign In Page
+
+![Mobile Sign In Page](docs/images/mobile_login_page.JPG)
+
 - Models Diagrams:
 
 ![Models Diagram](docs/images/models_diagram.JPG)
@@ -237,32 +253,72 @@ __Manual Testing:__
   
 - All links, form submissions, admin privileges, user privileges, app functions were tested out and work as intended.
 
-__Testing User Stories__
+__Testing User Stories - User__
 
-- As a Site User I can view a list of posts so that I can easily select one to view.
+| Action        | Acceptance Criteria           | Test Complete  |
+| ------------- |:-------------:| -----:|
+| View Post/s      | User is met with all posts when visiting Home Page |   Yes |
+| Read individual post      | User can easily select a post to read      |   Yes |
+| View number of likes | User can easily see how many likes a post has      |    Yes |
+| View number of comments | User can easily see how many comments a post has.      |    Yes |
+|   | All the posts display a heart icon with a number next to it      |      |
+|   | (which indicate how many times the post has been liked)      |      |
+| Register an account | User can easily register for an account      |    Yes |
+| Comment on posts | Registered users can easily add comments to a post      |    Yes |
+
+
+- As a Site User you can view a list of posts so that you can easily select one to view.
     - As soon as the user lands at the home page, they are able to see all the available blog posts.
 
-- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+- As a Site User you can view the number of likes on each post so that you can see which is the most popular or viral.
     - All the posts display a heart icon with a number next to it (which indicate how many times the post has been liked).
 
-- As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
-    - Whenever the user is reading a post, once they scroll down to the comments section, they can read any comments that users have left on that particular post.
+- As a Site User you can view comments on an individual post so that you can read the conversation.
+    - Whenever the user is reading a post, once they scroll down to the comments section, they can read any comments that other users have left on that particular post.
 
-- As a Site User I can register an account so that I can comment and like on posts.
+- As a Site User you can register an account so that you can comment and like on posts.
     - The navigation bar is a section that makes it easy for the user to learn more about the site's different sections, and it includes a "Register" page. Once the user goes through the straightforward registration process, they are able to like and comment on different posts.
 
-- As a Site User I can like or unlike a post so that I can interact with the content.
+- As a Site User you can like or unlike a post so that you can interact with the content.
     - Once the user is registered, they may click on the heart icon to simply like or unlike a post.
 
-- As a Site Admin I can Create, Read, Update and Delete posts (CRUD) so that I can manage my blog content both from the front and backend.
-    - The site admin is able to perform all CRUD functionalities from either the Django admin panel, or if they prefer, from the front-end as well. Once a superuser is logged in they are able to:
+
+__Testing User Stories - Admin__
+
+| Action        | Acceptance Criteria           | Test Complete  |
+| ------------- |:-------------:| -----:|
+| Create Post/s      | Admin user is able to create a new post |   Yes |
+| Create  a draft post/s      | Admin user is able to create a new post and save for later |   Yes |
+| View Post/s      | Admin user is met with all posts when visiting Home Page |   Yes |
+| Read individual post      | Admin user can easily select a post to read      |   Yes |
+| Edit Post/s      | Admin user is able to edit a post      |   Yes |
+| Delete Post/s      | Admin user is able to delete a post      |   Yes |
+| Approve comments | Admin user can easily see any new comments made on a post and approve as appropriate      |    Yes |
+| View number of likes | Admin user can easily see how many likes a post has      |    Yes |
+| View number of comments | Admin user can easily see how many comments a post has      |    Yes |
+
+
+- As a Admin user you can view a list of posts so that you can easily select one to view.
+    - As soon as the Admin user lands at the home page, they are able to see all the available blog posts.
+
+- As a Admin user you can view the number of likes on each post so that you can see which is the most popular or viral.
+    - All the posts display a heart icon with a number next to it (which indicate how many times the post has been liked).
+
+- As a Admin user you can view comments on an individual post so that you can read the conversation.
+    - Whenever the Admin user is reading a post, once they scroll down to the comments section, they can read any comments that other users have left on that particular post.
+
+- As a Admin user you can like or unlike a post so that you can interact with the content.
+    - Once the user is registered, they may click on the heart icon to simply like or unlike a post.
+
+- As a Admin user you can Create, Read, Update and Delete posts (CRUD) so that you can manage the blog content both from the front and backend.
+    - The Admin user is able to perform all CRUD functionalities from either the Django admin panel, or if they prefer, from the front-end as well. Once a superuser is logged in they are able to:
         - See an "Add Post" page in the navigation bar, once they click on this, a form is displayed to add a post.
         - If they click on any blog post they will see two links at the blog post header, "Edit" & "Delete".
 
-- As a Site Admin I can create draft posts so that I can finish writing the content later.
+- As a Admin user you can create draft posts so that you can finish writing the content later.
     - Whenever a post author decides to write a blog post, they have a dropdown option to pick from, and they can either choose the post status as "Draft" or "Publish".
 
-- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+- As a Admin user you can approve or disapprove comments so that you can filter out objectionable comments.
     - Admins may be able to read submitted comments and decide via the Django admin panel if they would like to approve or delete comments.
 
 
