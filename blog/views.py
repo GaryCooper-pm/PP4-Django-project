@@ -2,15 +2,16 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import UpdateView, DeleteView, CreateView
 from django.http import HttpResponseRedirect
-from .models import Post
-from .forms import CommentForm
 from django.urls import reverse_lazy
+from .models import Post, Category
+from .forms import CommentForm
 
 """
 Thanks to Code Institutes 'I Think Therefore I Blog'
 Walkthrough project - a great reference, inspiration and example:
 https://github.com/Code-Institute-Solutions/Django3blog
 """
+
 
 class PostList(generic.ListView):
 
@@ -107,6 +108,7 @@ class AddPost(CreateView):
     fields = [
         'title',
         'slug',
+        'category',
         'author',
         'featured_image',
         'excerpt',
@@ -114,4 +116,11 @@ class AddPost(CreateView):
         'status'
         ]
     # redirect to home page
+    success_url = reverse_lazy('home')
+
+
+class AddCategory(CreateView):
+    model = Category
+    template_name = 'add_category.html'
+    fields = '__all__'
     success_url = reverse_lazy('home')
