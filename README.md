@@ -41,16 +41,20 @@ For my fourth project I decided to create a blog.
 - [USER STORY](#user-story)
 - [FEATURES](#features)
     - [Wireframes](#wireframes)
+    - [Models Diagram](#models-diagram)
     - [Design](#design)
 - [TECHNOLOGIES](#technologies)
     - [Development](#development)
     - [Languages used](#languages-used)
-    - [Libraries used](#libraries-used)
+    - [Frameworks, Libraries and Programs used](#frameworks-libraries-and-programs-used)
 - [TESTING](#testing)
-    - [User story testing](#user-story-testing)
-    - [Validation](#validation)
     - [Manual testing](#manual-testing)
+    - [Testing User Stories](#testing-user-stories)
+    - [Testing Admin User Stories](#testing-admin-user-stories)
+    - [Validation](#validation)
     - [Unsolved bugs and problems](#unsolved-bugs-and-problems)
+    - [Resolved bugs and problems](#resolved-bugs-and-problems)
+- [FUTURE DEVELOPMENT](#future-development)
 - [DEPLOYMENT](#deployment)
 - [ACKNOWLEDGEMENTS](#acknowledgements)
 
@@ -78,6 +82,7 @@ I used the agile methodology tool:
 - As a Site User I can like or unlike a post so that I can interact with the content.
 - As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
 - As a Site Admin I can create draft posts so that I can finish writing the content later.
+- As a Site Admin I can create categories so that I can categorise posts.
 - As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
 
 ---
@@ -124,6 +129,8 @@ I used the agile methodology tool:
 
 ![Mobile Sign In Page](docs/images/mobile_login_page.JPG)
 
+### MODELS DIAGRAM
+
 - Models Diagrams:
 
 ![Models Diagram](docs/images/models_diagram.JPG)
@@ -139,8 +146,8 @@ __Navigation Bar__
 ![Navigation Bar](docs/images/navbar.JPG)
 - Navigation is a fully responsive feature on all pages, it includes links on the site's Logo (displaying to the left within the bar), Home, Register and Login pages.
 
-![Navigation Bar](docs/images/navbar_superuser_loggedin.JPG)
-- The 'Add Post' page only shows up for superusers when logged in.
+![Navigation Bar](docs/images/navbar_superuser_loggedin_addcategory.JPG)
+- The 'Add Post' and 'Add Category' links only show up for superusers when logged in.
 - The navigation looks the same on each page to allow for easy navigation, taking the user through a logical journey.
 - This section makes it easy for the user to learn more about the site's different sections and content.
 
@@ -184,8 +191,14 @@ __Comments Section__
 __Add Post Page__
 
 ![Add Post](docs/images/add_post.JPG)
-- If the user logged in as an admin they are able to add a blog post (from both the front and backend) by simply clicking on the 'Add Post' navigation link.
+- If the user logged in is an admin they are able to add a blog post (from both the front and backend) by simply clicking on the 'Add Post' navigation link.
 - The page features a form where the user can fill out all the details for the new post, such as title, slug, author, featured image (if desired), content and whether to publish or save as a draft for editing at a later time.
+
+__Add Category Page__
+
+![Add Category](docs/images/add_category.JPG)
+- If the user logged in is an admin they are able to add a category (from both the front and backend) by simply clicking on the 'Add Category' navigation link.
+- The page features a form where the user can fill out the name of the category.  When they submit the new category they are returned to the home page and the new category is appended to the database.
 
 __Edit Blog Post Page__
 
@@ -214,7 +227,7 @@ __Delete Blog Post Page__
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
 
-## FRAMEWORKS, LIBRARIES & PROGRAMS USED
+## FRAMEWORKS LIBRARIES AND PROGRAMS USED
 
 - [Balsamiq](https://balsamiq.com/)
   - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
@@ -249,11 +262,11 @@ __Delete Blog Post Page__
 
 # TESTING
 
-__Manual Testing:__
+## Manual Testing
   
 - All links, form submissions, admin privileges, user privileges, app functions were tested out and work as intended.
 
-__Testing User Stories - User__
+## Testing User Stories
 
 | Action        | Acceptance Criteria           | Test Complete  |
 | ------------- |:-------------:| -----:|
@@ -283,7 +296,7 @@ __Testing User Stories - User__
     - Once the user is registered, they may click on the heart icon to simply like or unlike a post.
 
 
-__Testing User Stories - Admin__
+## Testing Admin User Stories
 
 | Action        | Acceptance Criteria           | Test Complete  |
 | ------------- |:-------------:| -----:|
@@ -366,8 +379,10 @@ __Testing User Stories - Admin__
 
 - When adding a new post via the front end page "Add Post", the placeholder image is always aset as default, despite using other images being selected/uploaded. As a workaround the blog post's placeholder image can be replaced via the Django Admin Panel.
 
+- When adding a new post via the frontend the category selector (drop down) is not working, instead the category displays the default value.
 
-## Resolved problems
+
+## Resolved bugs and problems
 
 - When trying to check the responsiveness of the site I encountered a problem with the AmIResponsive website where by the site preview would not display.  After speaking with fellow student Chris Williams he directed me to a thread on [Slack](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1659653726948199) with a [work around](https://techsini.com/unable-to-generate-mockup-of-your-website-here-is-the-quick-fix/).
 
@@ -386,6 +401,14 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ```
+
+- I created a Branch of the main repository to implement and test the new custom model of adding categories to posts.
+
+
+## FUTURE DEVELOPMENT
+
+- I would like to implement the ability for registered users (non-admin) to be able to create posts and upload images.
+- I would like to implement the ability for registered users (non admin) the ability to edit and/or delete their previous comments.
 
 
 # DEPLOYMENT

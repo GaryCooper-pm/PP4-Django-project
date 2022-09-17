@@ -1,12 +1,13 @@
 from django.contrib import admin
-from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
+from .models import Post, Comment, Category
 
 """
 Thanks to Code Institutes 'I Think Therefore I Blog'
 Walkthrough project - a great reference, inspiration and example:
 https://github.com/Code-Institute-Solutions/Django3blog
 """
+
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
@@ -28,3 +29,10 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
+
+@admin.register(Category)
+class CategoryAdmin(SummernoteModelAdmin):
+
+    search_fields = ['title', 'content']
+    summernote_fields = ('content',)
