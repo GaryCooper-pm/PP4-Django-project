@@ -2,8 +2,7 @@ from django import forms
 from .models import Comment, Post, Category
 
 
-# choices = [('Solo Rides', 'Solo Rides'), ('Group Rides', 'Group Rides')]
-choices = Category.objects.all().values_list('name', 'name')
+choices = Category.objects.all().values_list('name','name')
 
 choice_list = []
 
@@ -19,8 +18,8 @@ class PostForm(forms.ModelForm):
     widgets = {
         'title': forms.TextInput(attrs={'class': 'form-control'}),
         'slug': forms.TextInput(attrs={'class': 'form-control'}),
-        'author': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
-        'category': forms.Select(attrs={'class': 'form-control'}),
+        'author': forms.Select(attrs={'class': 'form-control'}),
+        'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
     }
 
 

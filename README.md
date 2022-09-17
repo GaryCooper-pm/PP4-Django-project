@@ -139,8 +139,8 @@ __Navigation Bar__
 ![Navigation Bar](docs/images/navbar.JPG)
 - Navigation is a fully responsive feature on all pages, it includes links on the site's Logo (displaying to the left within the bar), Home, Register and Login pages.
 
-![Navigation Bar](docs/images/navbar_superuser_loggedin.JPG)
-- The 'Add Post' page only shows up for superusers when logged in.
+![Navigation Bar](docs/images/navbar_superuser_loggedin_addcategory.JPG)
+- The 'Add Post'  'Add Category' links only show up for superusers when logged in.
 - The navigation looks the same on each page to allow for easy navigation, taking the user through a logical journey.
 - This section makes it easy for the user to learn more about the site's different sections and content.
 
@@ -184,8 +184,14 @@ __Comments Section__
 __Add Post Page__
 
 ![Add Post](docs/images/add_post.JPG)
-- If the user logged in as an admin they are able to add a blog post (from both the front and backend) by simply clicking on the 'Add Post' navigation link.
+- If the user logged in is an admin they are able to add a blog post (from both the front and backend) by simply clicking on the 'Add Post' navigation link.
 - The page features a form where the user can fill out all the details for the new post, such as title, slug, author, featured image (if desired), content and whether to publish or save as a draft for editing at a later time.
+
+__Add Category Page__
+
+![Add Category](docs/images/add_category.JPG)
+- If the user logged in is an admin they are able to add a category (from both the front and backend) by simply clicking on the 'Add Category' navigation link.
+- The page features a form where the user can fill out the name of the category.  When they submit the new category they are returned to the home page and the new category is appended to the database.
 
 __Edit Blog Post Page__
 
