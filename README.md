@@ -307,7 +307,8 @@ __Delete Blog Post Page__
 | Action        | Acceptance Criteria           | Test Complete  |
 | ------------- |:-------------:| -----:|
 | Create Post/s      | Admin user is able to create a new post |   Yes |
-| Create  a draft post/s      | Admin user is able to create a new post and save for later |   Yes |
+| Create a draft post/s      | Admin user is able to create a new post and save for later |   Yes |
+| Create a new category      | Admin user is able to create a new category |   Yes |
 | View Post/s      | Admin user is met with all posts when visiting Home Page |   Yes |
 | Read individual post      | Admin user can easily select a post to read      |   Yes |
 | Edit Post/s      | Admin user is able to edit a post      |   Yes |
@@ -336,6 +337,9 @@ __Delete Blog Post Page__
 
 - As a Admin user you can create draft posts so that you can finish writing the content later.
     - Whenever a post author decides to write a blog post, they have a dropdown option to pick from, and they can either choose the post status as "Draft" or "Publish".
+
+- As a Admin user you can create a new category so that you can select it when creating a new post.
+    - Whenever a post author decides to write a blog post, they have a dropdown option of categories to pick from.
 
 - As a Admin user you can approve or disapprove comments so that you can filter out objectionable comments.
     - Admins may be able to read submitted comments and decide via the Django admin panel if they would like to approve or delete comments.
