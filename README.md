@@ -385,8 +385,6 @@ __Delete Blog Post Page__
 
 - When adding a new post via the front end page "Add Post", the placeholder image is always aset as default, despite using other images being selected/uploaded. As a workaround the blog post's placeholder image can be replaced via the Django Admin Panel.
 
-- When adding a new post via the frontend the category selector (drop down) is not working, instead the category displays the default value.
-
 
 ## Resolved bugs and problems
 
@@ -409,6 +407,9 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 ```
 
 - I created a Branch of the main repository to implement and test the new custom model of adding categories to posts.
+
+
+- When adding a new post via the frontend the category selector (drop down) was not working, instead the category displayed the default value.  After countless hours of tearing my greying hair out I reached out to Tutor Support (Ger and Ed) and together we were able to identify and resolve the problem, which was due to the database not updating.  In order to resolve this I had to delete the database and start a fresh.
 
 
 ## FUTURE DEVELOPMENT
