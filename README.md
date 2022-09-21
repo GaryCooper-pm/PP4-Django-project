@@ -263,12 +263,6 @@ __Delete Blog Post Page__
 # TESTING
 
 ## Manual Testing
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-=======
-=======
->>>>>>> 330819ff2241fbdf7ce219a18aac21f146f44d25
 
 ## Manual Testing of User Input and Functions  
   I systematically tested all user inputs and functionality in the website to compare feedback/results against expected results.  
@@ -276,10 +270,6 @@ __Delete Blog Post Page__
 
 - The results of this testing script can be found [HERE](https://docs.google.com/spreadsheets/d/1s9QWb1ZWJ50RqVrJlcIcfsypzAWEmzDRqDNGV2GRcVU/edit?usp=sharing)
 
-<<<<<<< HEAD
->>>>>>> categories
-=======
->>>>>>> 330819ff2241fbdf7ce219a18aac21f146f44d25
 - All links, form submissions, admin privileges, user privileges, app functions were tested out and work as intended.
 
 ## Testing User Stories
