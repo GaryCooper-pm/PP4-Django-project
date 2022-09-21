@@ -33,7 +33,8 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    category = models.CharField(max_length=50, default='Group Rides')
+    category = models.ForeignKey(
+       Category, on_delete=models.CASCADE, related_name="category")
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)

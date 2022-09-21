@@ -263,7 +263,17 @@ __Delete Blog Post Page__
 # TESTING
 
 ## Manual Testing
+<<<<<<< HEAD
   
+=======
+
+## Manual Testing of User Input and Functions  
+  I systematically tested all user inputs and functionality in the website to compare feedback/results against expected results.  
+  Any unexpected output/outcomes were fixed.
+
+- The results of this testing script can be found [HERE](https://docs.google.com/spreadsheets/d/1s9QWb1ZWJ50RqVrJlcIcfsypzAWEmzDRqDNGV2GRcVU/edit?usp=sharing)
+
+>>>>>>> categories
 - All links, form submissions, admin privileges, user privileges, app functions were tested out and work as intended.
 
 ## Testing User Stories
